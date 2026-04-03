@@ -458,3 +458,26 @@ document.addEventListener('DOMContentLoaded', () => {
         spanAno.textContent = new Date().getFullYear();
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const btnAceitar = document.getElementById('cookie-aceitar');
+    const btnRecusar = document.getElementById('cookie-recusar');
+
+    // Verifica se já existe a escolha no localStorage
+    const cookieChoice = localStorage.getItem('cookie-consent');
+
+    if (!cookieChoice) {
+        // Mostra o banner com um pequeno delay para elegância
+        setTimeout(() => {
+            cookieBanner.classList.add('show');
+        }, 2000);
+    }
+
+    function fecharBanner(escolha) {
+        localStorage.setItem('cookie-consent', escolha);
+        cookieBanner.classList.remove('show');
+    }
+
+    btnAceitar.addEventListener('click', () => fecharBanner('aceito'));
+    btnRecusar.addEventListener('click', () => fecharBanner('essenciais'));
+});

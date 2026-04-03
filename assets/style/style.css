@@ -2971,7 +2971,8 @@ button {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
     display: inline-block;
-    position: relative; /* Necessário para ancorar o campo de força */
+    position: relative;
+    /* Necessário para ancorar o campo de força */
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -2982,8 +2983,10 @@ button {
     position: absolute;
     top: -5px;
     bottom: -5px;
-    left: -15px; /* Expande 15px para a esquerda */
-    right: -15px; /* Expande 15px para a direita */
+    left: -15px;
+    /* Expande 15px para a esquerda */
+    right: -15px;
+    /* Expande 15px para a direita */
 }
 
 .footer-links a:hover {
@@ -3430,4 +3433,150 @@ button {
         /* Muito mais espaço para arrastar no touch */
     }
 
+}
+
+/* =========================================
+   BANNER DE COOKIES (GLASSMORPHISM)
+========================================= */
+.cookie-wrapper {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(150%);
+    /* Começa escondido */
+    width: 90%;
+    max-width: 700px;
+    z-index: 99999;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cookie-wrapper.show {
+    transform: translateX(-50%) translateY(0);
+}
+
+.cookie-container {
+    background: rgba(253, 251, 247, 0.8);
+    /* Sua --cor-fundo com transparência */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(212, 165, 165, 0.3);
+    /* Sua --cor-primaria */
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.cookie-tag {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.cookie-texto p {
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cookie-acoes {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.btn-cookie-primario,
+.btn-cookie-secundario {
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-cookie-primario {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.btn-cookie-secundario {
+    background-color: transparent;
+    color: var(--cor-texto);
+    border: 1px solid rgba(58, 53, 53, 0.2);
+}
+
+.btn-cookie-primario:hover {
+    background-color: var(--cor-primaria-hover);
+    transform: translateY(-2px);
+}
+
+/* 1. Tablet / Notebook (<= 1024px) */
+@media (width <=1024px) {
+    .cookie-wrapper {
+        width: 95%;
+        max-width: 650px;
+    }
+
+    .cookie-container {
+        padding: 1.2rem 1.5rem;
+        gap: 1.5rem;
+    }
+}
+
+/* 2. Mobile Padrão (<= 768px) */
+@media (width <=768px) {
+    .cookie-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.2rem;
+    }
+
+    .cookie-acoes {
+        width: 100%;
+        flex-direction: column;
+        /* Botões empilhados para facilitar o toque */
+        gap: 0.8rem;
+    }
+
+    .btn-cookie-primario,
+    .btn-cookie-secundario {
+        width: 100%;
+        padding: 1rem;
+        /* Área de toque maior (UX de alta performance) */
+    }
+
+    .cookie-texto p {
+        font-size: 0.85rem;
+    }
+}
+
+/* 3. Mobile Pequeno (<= 360px) */
+@media (width <=360px) {
+    .cookie-wrapper {
+        bottom: 1rem;
+    }
+
+    .cookie-container {
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .cookie-tag {
+        font-size: 0.65rem;
+        letter-spacing: 1.5px;
+    }
+
+    .cookie-texto p {
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
 }
