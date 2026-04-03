@@ -983,7 +983,7 @@ button {
 }
 
 /* =========================================
-   RESPONSIVIDADE (3 MEDIAS)
+   RESPONSIVIDADE DA SEÇÃO MANIFESTO
 ========================================= */
 
 /* 1. Tablet / Notebook (<= 1024px) */
@@ -1004,6 +1004,7 @@ button {
     .secao-manifesto {
         padding: 4rem 0;
         overflow: hidden;
+        /* Trava absoluta de vazamento horizontal */
     }
 
     .manifesto-conteudo {
@@ -1032,11 +1033,12 @@ button {
         font-size: clamp(1.8rem, 6vw, 2rem);
         line-height: 1.25;
         width: 100%;
-        /* O Segredo: Trava a largura para forçar o texto a descer com elegância */
+        /* O Segredo: Trava a largura para forçar o texto a descer com elegância e centralizar */
         max-width: 320px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 1.5rem;
+        word-wrap: break-word;
     }
 
     .manifesto-texto {
@@ -1053,11 +1055,13 @@ button {
         /* Alinha o botão perfeitamente com o texto */
     }
 
+    /* Anula o efeito magnético e trava a largura no celular */
     .btn-magnetico {
         transform: none !important;
         transition: background-color 0.3s ease !important;
         width: 100%;
         box-sizing: border-box;
+        /* Impede que o padding vaze da tela */
         justify-content: center;
         padding: 1.2rem 1rem;
     }
@@ -1085,6 +1089,7 @@ button {
         padding: 1rem;
         font-size: 0.85rem;
         gap: 8px;
+        /* Aproxima o texto do ícone */
     }
 }
 
