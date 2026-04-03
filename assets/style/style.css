@@ -1002,9 +1002,8 @@ button {
 /* 2. Mobile Padrão (<= 768px) */
 @media (width <=768px) {
     .secao-manifesto {
-        padding: 5rem 0;
+        padding: 4rem 0;
         overflow: hidden;
-        /* Trava absoluta de vazamento */
     }
 
     .manifesto-conteudo {
@@ -1012,14 +1011,16 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         width: 100%;
         max-width: 100%;
-        /* Trava o container de texto */
         box-sizing: border-box;
     }
 
     .manifesto-conteudo .sobre-tag {
         padding-left: 0;
+        margin-bottom: 1rem;
+        /* Espaço pro título respirar */
     }
 
     .manifesto-conteudo .sobre-tag::before {
@@ -1027,32 +1028,36 @@ button {
     }
 
     .manifesto-titulo {
-        font-size: 2.2rem;
-        /* Ajustado para caber perfeitamente na tela */
-        word-wrap: break-word;
-        /* Força quebra se a palavra for muito longa */
+        /* Usa fonte menor e dinâmica */
+        font-size: clamp(1.8rem, 6vw, 2rem);
+        line-height: 1.25;
         width: 100%;
+        /* O Segredo: Trava a largura para forçar o texto a descer com elegância */
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
     }
 
     .manifesto-texto {
         width: 100%;
+        /* Respiro lateral pro texto não encostar nas bordas da tela */
+        padding: 0 1.5rem;
+        box-sizing: border-box;
     }
 
     .manifesto-cta-box {
         width: 100%;
-        /* Segura a caixa do botão */
-        max-width: 100%;
         box-sizing: border-box;
+        padding: 0 1.5rem;
+        /* Alinha o botão perfeitamente com o texto */
     }
 
-    /* Anula o efeito magnético e trava a largura no celular */
     .btn-magnetico {
         transform: none !important;
         transition: background-color 0.3s ease !important;
         width: 100%;
-        max-width: 100%;
         box-sizing: border-box;
-        /* A MÁGICA: Impede que o padding vaze da tela */
         justify-content: center;
         padding: 1.2rem 1rem;
     }
@@ -1061,19 +1066,25 @@ button {
 /* 3. Mobile Pequeno (<= 360px) */
 @media (width <=360px) {
     .manifesto-titulo {
-        font-size: 1.8rem;
-        /* Ajuste crítico para celulares mais estreitos */
+        font-size: 1.6rem;
+        /* Ainda menor e mais delicado */
+        max-width: 280px;
+        /* Quebra a linha mais cedo no celular antigo */
     }
 
     .manifesto-texto {
         font-size: 0.95rem;
+        padding: 0 1rem;
+    }
+
+    .manifesto-cta-box {
+        padding: 0 1rem;
     }
 
     .btn-magnetico {
         padding: 1rem;
         font-size: 0.85rem;
         gap: 8px;
-        /* Aproxima o texto do ícone */
     }
 }
 
