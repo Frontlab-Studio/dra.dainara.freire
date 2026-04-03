@@ -29,10 +29,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Verifica se ficou aberto ou fechado após o toggle
         const estaAberto = navMenu.classList.contains('ativo');
-        
+
         // Atualiza acessibilidade e trava o scroll do fundo
         btnMobile.setAttribute('aria-expanded', estaAberto);
         document.body.style.overflow = estaAberto ? 'hidden' : '';
+
+        // [NOVA LÓGICA] Oculta ou exibe o WhatsApp Flutuante
+        const btnWhats = document.querySelector('.whatsapp-flutuante');
+        if (btnWhats) {
+            if (estaAberto) {
+                btnWhats.classList.add('oculto');
+            } else {
+                btnWhats.classList.remove('oculto');
+            }
+        }
     }
 
     // 3. Evento de Clique no Botão Mobile

@@ -3094,6 +3094,16 @@ button {
     padding: 0 !important;
 }
 
+/* Estado oculto ativado via JS quando o menu abre */
+.whatsapp-flutuante.oculto {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    /* Encolhe suavemente */
+    pointer-events: none;
+    /* Impede cliques acidentais invisíveis */
+}
+
 /* Container interno para o SVG e o pulso */
 .whats-avatar-wrapper {
     position: relative;
@@ -3254,4 +3264,5 @@ button {
         width: 26px;
         height: 26px;
     }
+
 }
