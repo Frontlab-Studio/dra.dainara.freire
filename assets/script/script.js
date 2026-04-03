@@ -1,57 +1,64 @@
+// =========================================
+// HEADER PRINCIPAL E MENU MOBILE
+// =========================================
 document.addEventListener('DOMContentLoaded', () => {
     const header = document.getElementById('header');
-    const btnAbrir = document.getElementById('btn-abrir-menu');
-    const btnFechar = document.getElementById('btn-fechar-menu');
+    const btnMobile = document.getElementById('btn-abrir-menu'); // O botão único (Hambúrguer/X)
     const navMenu = document.getElementById('menu-mobile');
     const navLinks = document.querySelectorAll('.nav-link, .btn-cta-header');
 
     // 1. Lógica do Header Fixo e Transparente (Performance Scroll)
-    window.addEventListener('scroll', () => {
-        // Se rolou mais de 50px, adiciona o fundo de vidro
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    }, { passive: true }); // passive: true melhora muito o Google PageSpeed em eventos de scroll
-
-    // 2. Abrir Menu
-    function abrirMenu() {
-        navMenu.classList.add('ativo');
-        btnAbrir.setAttribute('aria-expanded', 'true');
-        // Trava o scroll do body para a pessoa não rolar a página de fundo
-        document.body.style.overflow = 'hidden';
+    if (header) {
+        window.addEventListener('scroll', () => {
+            // Se rolou mais de 50px, adiciona o fundo de vidro (scrolled)
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true }); // passive: true melhora muito o Google PageSpeed
     }
 
-    // 3. Fechar Menu
-    function fecharMenu() {
-        navMenu.classList.remove('ativo');
-        btnAbrir.setAttribute('aria-expanded', 'false');
-        // Libera o scroll do body
-        document.body.style.overflow = '';
+    // 2. Função Única para Alternar Menu (Abrir e Fechar)
+    function alternarMenu() {
+        if (!navMenu || !btnMobile) return; // Trava de segurança Sênior
+
+        // Alterna a classe 'ativo' tanto no Menu (aparece a tela) quanto no Botão (vira o X)
+        navMenu.classList.toggle('ativo');
+        btnMobile.classList.toggle('ativo');
+
+        // Verifica se ficou aberto ou fechado após o toggle
+        const estaAberto = navMenu.classList.contains('ativo');
+        
+        // Atualiza acessibilidade e trava o scroll do fundo
+        btnMobile.setAttribute('aria-expanded', estaAberto);
+        document.body.style.overflow = estaAberto ? 'hidden' : '';
     }
 
-    btnAbrir.addEventListener('click', abrirMenu);
-    btnFechar.addEventListener('click', fecharMenu);
+    // 3. Evento de Clique no Botão Mobile
+    if (btnMobile) {
+        btnMobile.addEventListener('click', alternarMenu);
+    }
 
     // 4. Fechar menu e animar ao clicar num link (UX Premium)
-    navLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            // Apenas aplica a lógica se o menu mobile estiver ativo
-            if (navMenu.classList.contains('ativo')) {
-                // Adiciona classe de animação tátil no link
-                this.classList.add('clicked');
+    if (navLinks.length > 0) {
+        navLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                // Apenas aplica a lógica se o menu mobile estiver ativo na tela
+                if (navMenu && navMenu.classList.contains('ativo')) {
+                    // Adiciona classe de animação tátil no link clicado
+                    this.classList.add('clicked');
 
-                // Aguarda a animação visual (300ms) antes de fechar a tela
-                setTimeout(() => {
-                    fecharMenu();
-                    this.classList.remove('clicked');
-                }, 300);
-            }
+                    // Aguarda a animação visual (300ms) antes de fechar o menu
+                    setTimeout(() => {
+                        alternarMenu(); // Chama a função que fecha a tela e destrava o scroll
+                        this.classList.remove('clicked'); // Limpa a classe para o próximo clique
+                    }, 300);
+                }
+            });
         });
-    });
+    }
 });
-
 // =========================================
 // INTERAÇÕES PREMIUM: SEÇÃO MANIFESTO
 // =========================================
