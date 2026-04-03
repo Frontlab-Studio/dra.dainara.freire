@@ -1003,6 +1003,8 @@ button {
 @media (width <=768px) {
     .secao-manifesto {
         padding: 5rem 0;
+        overflow: hidden;
+        /* Trava absoluta de vazamento */
     }
 
     .manifesto-conteudo {
@@ -1010,6 +1012,10 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        max-width: 100%;
+        /* Trava o container de texto */
+        box-sizing: border-box;
     }
 
     .manifesto-conteudo .sobre-tag {
@@ -1020,28 +1026,54 @@ button {
         display: none;
     }
 
-    /* Anula o efeito magnético no celular, pois não há mouse */
+    .manifesto-titulo {
+        font-size: 2.2rem;
+        /* Ajustado para caber perfeitamente na tela */
+        word-wrap: break-word;
+        /* Força quebra se a palavra for muito longa */
+        width: 100%;
+    }
+
+    .manifesto-texto {
+        width: 100%;
+    }
+
+    .manifesto-cta-box {
+        width: 100%;
+        /* Segura a caixa do botão */
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Anula o efeito magnético e trava a largura no celular */
     .btn-magnetico {
         transform: none !important;
         transition: background-color 0.3s ease !important;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        /* A MÁGICA: Impede que o padding vaze da tela */
         justify-content: center;
+        padding: 1.2rem 1rem;
     }
 }
 
 /* 3. Mobile Pequeno (<= 360px) */
 @media (width <=360px) {
     .manifesto-titulo {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        /* Ajuste crítico para celulares mais estreitos */
     }
 
     .manifesto-texto {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .btn-magnetico {
-        padding: 1rem 1.2rem;
+        padding: 1rem;
         font-size: 0.85rem;
+        gap: 8px;
+        /* Aproxima o texto do ícone */
     }
 }
 
