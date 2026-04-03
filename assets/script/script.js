@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const mensagemBase = `Olá, equipe da Dra. Dainara Freire! ✨%0A%0AMe chamo *${nome}* (WhatsApp: ${whats}) e acabei de solicitar um atendimento através do site.%0A%0A📌 *O que desejo realçar:* ${interesse}.%0A%0A✅ Confirmo que li sobre os investimentos a partir de R$ 850 e gostaria de agendar minha avaliação para alinhar meu protocolo.`;
 
             // O NÚMERO DO WHATSAPP DA CLÍNICA VAI AQUI (Somente números, ex: 5511999999999)
-            const numeroClinica = "5500000000000";
+            const numeroClinica = "554497739970";
 
             // Cria o link final da API do WhatsApp
             const urlWhatsApp = `https://wa.me/${numeroClinica}?text=${mensagemBase}`;
