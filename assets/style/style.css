@@ -2015,6 +2015,7 @@ button {
    RESPONSIVIDADE (3 MEDIAS)
 ========================================= */
 
+/* 1. Tablet / Notebook (<= 1024px) */
 @media (width <=1024px) {
     .card-avaliacao {
         flex: 0 0 320px;
@@ -2022,9 +2023,22 @@ button {
     }
 }
 
+/* 2. Mobile Padrão (<= 768px) */
 @media (width <=768px) {
     .secao-avaliacoes {
         padding: 5rem 0;
+    }
+
+    /* A MÁGICA: Libera o arrasto nativo com o dedo apenas no celular */
+    .marquee-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        /* Deixa o deslize suave no iPhone (iOS) */
+    }
+
+    /* Garante que o toque seja reconhecido mesmo nos espaços em branco entre os cards */
+    .marquee-track {
+        pointer-events: auto;
     }
 
     .card-avaliacao {
@@ -2033,6 +2047,7 @@ button {
     }
 }
 
+/* 3. Mobile Pequeno (<= 360px) */
 @media (width <=360px) {
     .card-avaliacao {
         flex: 0 0 calc(90vw - 1rem);
