@@ -1172,7 +1172,7 @@ button {
 
     .manifesto-titulo {
         /* A MÁGICA 2: Reduzimos levemente a fonte base para o celular não sofrer */
-        font-size: clamp(1.8rem, 6vw, 2.4rem);
+        font-size: clamp(1.7rem, 6vw, 2.4rem);
         max-width: 100%;
         /* Removemos o travamento de 320px que causava o vazamento */
         word-wrap: break-word;
