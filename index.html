@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonização Facial em [cidade] | Dra. Lia Caldas - Estética de Alta Performance</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body>
+
+    <header class="header-principal" id="header">
+        <div class="container-header">
+            <a href="#inicio" class="logo" aria-label="Ir para o início">
+                <img src="assets/svg/logo.png" alt="Dra. Dainara Freire - Estética e Harmonização" width="180"
+                    height="50" loading="eager" fetchpriority="high" decoding="sync">
+            </a>
+
+            <button class="btn-mobile" id="btn-abrir-menu" aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span class="hamburguer"></span>
+            </button>
+
+            <nav class="nav-menu" id="menu-mobile">
+                <button class="btn-fechar-menu" id="btn-fechar-menu" aria-label="Fechar menu">&times;</button>
+
+                <ul class="nav-lista">
+                    <li class="nav-item" style="--delay: 0.1s"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item" style="--delay: 0.2s"><a href="#procedimentos"
+                            class="nav-link">Procedimentos</a></li>
+                    <li class="nav-item" style="--delay: 0.3s"><a href="#especialista" class="nav-link">A
+                            Especialista</a></li>
+                    <li class="nav-item" style="--delay: 0.4s"><a href="#resultados" class="nav-link">Resultados</a>
+                    </li>
+                    <li class="nav-item" style="--delay: 0.5s">
+                        <a href="#triagem" class="btn-cta-header">Agendar Avaliação</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-video-section" id="inicio">
+
+        <div class="video-background">
+            <video autoplay loop muted playsinline id="hero-video" poster="assets/img/autocuidado-ritual.webp">
+
+                <source media="(max-width: 768px)" src="assets/midia/hero-mobile.webm" type="video/webm">
+                <source media="(max-width: 768px)" src="assets/midia/hero-mobile.mp4" type="video/mp4">
+
+                <source media="(min-width: 769px)" src="assets/midia/hero-desktop.webm" type="video/webm">
+                <source media="(min-width: 769px)" src="assets/midia/hero-desktop.mp4" type="video/mp4">
+
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <div class="hero-overlay-gradiente"></div>
+        </div>
+
+        <div class="hero-conteudo-wrapper">
+            <div class="hero-box-text reveal-fade-up">
+                <span class="hero-tag-video">Dra. Dainara Freire</span>
+                <h1 class="hero-titulo-video">A harmonia que <br>revela a sua essência.</h1>
+                <p class="hero-descricao-video">
+                    Protocolos de estética avançada desenvolvidos para realçar a sua beleza natural com máxima precisão
+                    e elegância.
+                </p>
+
+                <a href="#triagem" class="btn-whatsapp btn-hero-video">
+                    Agendar Avaliação
+                    <span class="icone-seta">🡢</span>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="secao-procedimentos" id="procedimentos">
+        <div class="container-procedimentos">
+
+            <div class="cabecalho-secao reveal-fade-up">
+                <h2 class="titulo-secao">Nossa Expertise</h2>
+                <p class="subtitulo-secao">Protocolos que revelam a sua melhor versão</p>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="grid-procedimentos slider-mobile">
+
+                    <article class="card-procedimento-16-9 reveal-fade-up" style="--delay: 0.1s">
+                        <picture class="card-bg">
+                            <source srcset="img/proc-1.avif" type="image/avif">
+                            <img src="img/proc-1.webp" alt="Harmonização Facial - Dra Dainara Freire" loading="lazy"
+                                width="800" height="450">
+                        </picture>
+                        <div class="card-overlay"></div>
+
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Harmonização Facial</h3>
+                            <div class="card-revelacao">
+                                <p class="card-descricao">Realce seus traços com precisão milimétrica, respeitando sua
+                                    anatomia única.</p>
+                                <span class="texto-acao">Saiba mais <span class="icone-seta">🡢</span></span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Harmonização%20Facial."
+                            class="link-absoluto" target="_blank" rel="noopener"
+                            aria-label="Saber mais sobre Harmonização Facial"></a>
+                    </article>
+
+                    <article class="card-procedimento-16-9 reveal-fade-up" style="--delay: 0.2s">
+                        <picture class="card-bg">
+                            <source srcset="img/proc-2.avif" type="image/avif">
+                            <img src="assets/img/" alt="Toxina Botulínica - Dra Dainara Freire" loading="lazy"
+                                width="800" height="450">
+                        </picture>
+                        <div class="card-overlay"></div>
+
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Toxina Botulínica</h3>
+                            <div class="card-revelacao">
+                                <p class="card-descricao">Prevenção e suavização de linhas de expressão para um rosto
+                                    descansado.</p>
+                                <span class="texto-acao">Saiba mais <span class="icone-seta">🡢</span></span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Toxina%20Botulínica."
+                            class="link-absoluto" target="_blank" rel="noopener"
+                            aria-label="Saber mais sobre Toxina Botulínica"></a>
+                    </article>
+
+                    <article class="card-procedimento-16-9 reveal-fade-up" style="--delay: 0.3s">
+                        <picture class="card-bg">
+                            <source srcset="img/proc-3.avif" type="image/avif">
+                            <img src="img/proc-3.webp" alt="Bioestimuladores de Colágeno" loading="lazy" width="800"
+                                height="450">
+                        </picture>
+                        <div class="card-overlay"></div>
+
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Bioestimuladores</h3>
+                            <div class="card-revelacao">
+                                <p class="card-descricao">Tratamento profundo para devolver a firmeza, viço e
+                                    elasticidade da pele.</p>
+                                <span class="texto-acao">Saiba mais <span class="icone-seta">🡢</span></span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Bioestimuladores."
+                            class="link-absoluto" target="_blank" rel="noopener"
+                            aria-label="Saber mais sobre Bioestimuladores"></a>
+                    </article>
+
+                    <article class="card-procedimento-16-9 reveal-fade-up" style="--delay: 0.4s">
+                        <picture class="card-bg">
+                            <source srcset="img/proc-4.avif" type="image/avif">
+                            <img src="img/proc-4.webp" alt="Preenchimento Labial" loading="lazy" width="800"
+                                height="450">
+                        </picture>
+                        <div class="card-overlay"></div>
+
+                        <div class="card-conteudo">
+                            <h3 class="card-titulo">Preenchimento Labial</h3>
+                            <div class="card-revelacao">
+                                <p class="card-descricao">Volume, contorno e hidratação na medida exata para um sorriso
+                                    marcante.</p>
+                                <span class="texto-acao">Saiba mais <span class="icone-seta">🡢</span></span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5500000000000?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Preenchimento%20Labial."
+                            class="link-absoluto" target="_blank" rel="noopener"
+                            aria-label="Saber mais sobre Preenchimento Labial"></a>
+                    </article>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="secao-manifesto" id="manifesto">
+        <div class="container-manifesto">
+            <div class="manifesto-grid">
+
+                <div class="manifesto-imagem-wrapper reveal-imagem-mascara">
+                    <picture class="manifesto-bg">
+                        <source srcset="img/manifesto-beleza.avif" type="image/avif">
+                        <img src="img/manifesto-beleza.webp" alt="Detalhe artístico de beleza natural" loading="lazy"
+                            width="800" height="450">
+                    </picture>
+                </div>
+
+                <div class="manifesto-conteudo">
+                    <span class="sobre-tag reveal-fade-up">A Filosofia</span>
+
+                    <h2 class="manifesto-titulo reveal-mask delay-1">
+                        A verdadeira elegância <br>
+                        <em>não grita, ela sussurra.</em>
+                    </h2>
+
+                    <p class="manifesto-texto reveal-fade-up delay-2">
+                        Nosso maior sucesso na clínica é quando todos notam o seu brilho, a sua pele viçosa e o seu ar
+                        descansado, mas <strong>ninguém consegue descobrir o seu segredo</strong>.
+                    </p>
+                    <p class="manifesto-texto reveal-fade-up delay-3">
+                        A Dra. Dainara Freire não busca transformar quem você é. Nosso manifesto é resgatar a sua
+                        essência através da "beleza invisível", com intervenções tão precisas que parecem ter nascido
+                        com você.
+                    </p>
+
+                    <div class="manifesto-cta-box reveal-fade-up delay-4">
+                        <a href="https://wa.me/5500000000000?text=Olá,%20me%20identifiquei%20com%20o%20Manifesto%20e%20quero%20descobrir%20minha%20melhor%20fase."
+                            class="btn-magnetico" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+                            <span class="btn-magnetico-texto">Descubra sua melhor fase</span>
+                            <span class="btn-magnetico-icone">
+                                 <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648A9.85 9.85 0 0 1 12 2C17.523 2 22 6.477 22 12s-4.477 10-10 10z" />
+                            </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="secao-especialista" id="especialista">
+        <div class="container-especialista">
+            <div class="especialista-grid">
+
+                <div class="especialista-imagem-container reveal-fade-up">
+                    <div class="especialista-imagem-wrapper" id="img-tilt">
+                        <picture class="especialista-foto">
+                            <source srcset="img/dra-dainara.avif" type="image/avif">
+                            <img src="img/dra-dainara.webp" alt="Dra. Dainara Freire - Especialista em Harmonização"
+                                loading="lazy" width="600" height="800">
+                        </picture>
+
+                        <div class="badge-autoridade">
+                            <span class="badge-numero">Excelência</span>
+                            <span class="badge-texto">em Estética Avançada</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="especialista-conteudo">
+                    <div class="reveal-mask">
+                        <span class="sobre-tag">A Especialista</span>
+                    </div>
+
+                    <div class="reveal-mask delay-1">
+                        <h2 class="especialista-nome">Dra. Dainara Freire</h2>
+                    </div>
+
+                    <div class="reveal-mask delay-2">
+                        <h3 class="especialista-subtitulo">A ciência por trás da sua beleza autêntica.</h3>
+                    </div>
+
+                    <div class="especialista-biografia reveal-fade-up delay-3">
+                        <p>Com um olhar refinado para o visagismo e paixão pela anatomia facial, dedico minha carreira a
+                            entregar resultados que não apenas rejuvenescem, mas devolvem a autoconfiança de cada
+                            paciente.</p>
+                        <p>Acredito que a verdadeira harmonização é aquela que ninguém percebe que foi feita. Utilizando
+                            as tecnologias mais avançadas do mercado global e técnicas minimamente invasivas, crio
+                            protocolos individualizados que respeitam a sua essência e previnem o envelhecimento de
+                            forma elegante.</p>
+                    </div>
+
+                    <div class="especialista-footer reveal-fade-up delay-4">
+                        <div class="especialista-credenciais">
+                            <span class="cargo">Diretora Clínica</span>
+                            <span class="separador">|</span>
+                            <span class="registro">Registro: 000000-UF</span>
+                        </div>
+
+                        <div class="assinatura-dra">
+                            Dainara Freire
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-triagem" id="triagem">
+        <div class="container-triagem">
+
+            <div class="triagem-wrapper reveal-fade-up">
+                <div class="cabecalho-triagem">
+                    <h2 class="titulo-triagem">Solicitação de Protocolo Personalizado</h2>
+                    <p class="subtitulo-triagem">Preencha seus dados abaixo. Nossa equipe de concierge entrará em
+                        contato via WhatsApp para alinhar a sua jornada de beleza.</p>
+                </div>
+
+                <form id="form-vip-whatsapp" class="form-vip">
+
+                    <div class="form-grupo-inputs">
+                        <div class="input-box">
+                            <input type="text" id="nome-paciente" required placeholder=" ">
+                            <label for="nome-paciente">Nome Completo</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" id="whats-paciente" required placeholder=" " pattern="[0-9\s\-\(\)]+">
+                            <label for="whats-paciente">WhatsApp (com DDD)</label>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo-selecao">
+                        <p class="label-pergunta">Como podemos realçar sua beleza hoje?</p>
+
+                        <div class="grid-tiles">
+                            <label class="tile-label">
+                                <input type="radio" name="interesse" value="Lábios ou Pequenos Retoques" required>
+                                <div class="tile-visual">
+                                    <span class="tile-icone">✨</span>
+                                    <span class="tile-texto">Apenas um pequeno retoque ou Lábios</span>
+                                </div>
+                            </label>
+
+                            <label class="tile-label">
+                                <input type="radio" name="interesse" value="Volume, Contorno ou Flacidez">
+                                <div class="tile-visual">
+                                    <span class="tile-icone">💆‍♀️</span>
+                                    <span class="tile-texto">Perda de volume, contorno ou flacidez</span>
+                                </div>
+                            </label>
+
+                            <label class="tile-label">
+                                <input type="radio" name="interesse" value="Linhas de Expressão (Botox)">
+                                <div class="tile-visual">
+                                    <span class="tile-icone">🎯</span>
+                                    <span class="tile-texto">Linhas de expressão (Botox)</span>
+                                </div>
+                            </label>
+
+                            <label class="tile-label">
+                                <input type="radio" name="interesse" value="Bioestimuladores (VIP)">
+                                <div class="tile-visual">
+                                    <span class="tile-icone">💎</span>
+                                    <span class="tile-texto">Lista VIP: Bioestimuladores</span>
+                                </div>
+                            </label>
+
+                            <label class="tile-label">
+                                <input type="radio" name="interesse" value="Outros / Não sei ao certo">
+                                <div class="tile-visual">
+                                    <span class="tile-icone">🤍</span>
+                                    <span class="tile-texto">Outros / Avaliação Completa</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-grupo-aceite">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="aceite-valor" required>
+                            <span class="checkmark"></span>
+                            <span class="texto-aceite">
+                                Compreendo que a clínica atua com protocolos de excelência, com investimentos a partir
+                                de <strong>R$ 850/mL</strong> (definidos detalhadamente após a minha avaliação
+                                individual).
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="form-grupo-botao">
+                        <button type="submit" class="btn-whatsapp btn-submit-vip" id="btn-enviar-vip" disabled>
+                            Solicitar Atendimento VIP <span class="icone-seta">🡢</span>
+                        </button>
+                        <p class="seguranca-texto">🔒 Seus dados estão seguros e não serão compartilhados.</p>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <section class="secao-tecnologia-ritual dark-theme" id="tecnologia">
+        <div class="container-tech">
+            <div class="grid-tech">
+
+                <div class="col-texto-tech">
+                    <div class="reveal-mask">
+                        <span class="sobre-tag tag-clara">Padrão Ouro</span>
+                    </div>
+
+                    <div class="reveal-mask delay-1">
+                        <h2 class="titulo-tech">Ciência, Segurança e <br><em>Alta Tecnologia.</em></h2>
+                    </div>
+
+                    <p class="desc-tech reveal-fade-up delay-2">
+                        A excelência dos nossos resultados nasce da combinação entre a expertise humana e as inovações
+                        tecnológicas mais avançadas do mundo. Não fazemos concessões quando o assunto é a sua segurança.
+                    </p>
+
+                    <ul class="lista-tech reveal-fade-up delay-3">
+                        <li>
+                            <span class="icone-tech">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </span>
+                            <div class="info-tech">
+                                <strong>Biomateriais Premium</strong>
+                                <p>Utilizamos apenas produtos com certificação máxima internacional (FDA e ANVISA).</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icone-tech">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M2 12h4l3-9 5 18 3-9h5" />
+                                </svg>
+                            </span>
+                            <div class="info-tech">
+                                <strong>Análise Visagista Digital</strong>
+                                <p>Mapeamento milimétrico das proporções faciais para previsibilidade absoluta.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-imagem-tech reveal-fade-left">
+                    <div class="tech-imagem-wrapper" id="parallax-img">
+                        <picture class="tech-bg">
+                            <source srcset="img/tecnologia-premium.avif" type="image/avif">
+                            <img src="img/tecnologia-premium.webp" alt="Materiais premium e tecnologia em harmonização"
+                                loading="lazy" width="800" height="450">
+                        </picture>
+                        <div class="tech-overlay"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="secao-avaliacoes" id="avaliacoes">
+        <div class="container-avaliacoes">
+            <div class="cabecalho-secao reveal-fade-up">
+                <h2 class="titulo-secao">A Assinatura do Nosso Trabalho</h2>
+                <p class="subtitulo-secao">O que dizem as pacientes que vivenciaram nossa experiência</p>
+            </div>
+        </div>
+
+        <div class="marquee-container reveal-fade-up delay-1" id="depoimentos-marquee">
+            <div class="marquee-track" id="marquee-track">
+
+                <article class="card-avaliacao">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-estrelas">★★★★★</div>
+                        <span class="selo-verificado">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="color: #4285F4;">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="avaliacao-texto">"Eu tinha pavor de ficar artificial. A Dra. Dainara foi tão cuidadosa e
+                        me explicou tudo com tanta clareza que me senti segura. O resultado ficou absurdamente natural,
+                        do jeito que eu queria!"</p>
+                    <div class="avaliacao-autor">
+                        <img src="img/avatar-1.webp" alt="Avatar Cliente" class="autor-avatar" loading="lazy" width="45"
+                            height="45">
+                        <div class="autor-info">
+                            <span class="autor-nome">Mariana C.</span>
+                            <span class="autor-proc">Preenchimento Labial</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-avaliacao">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-estrelas">★★★★★</div>
+                    </div>
+                    <p class="avaliacao-texto">"Ambiente impecável e atendimento de primeiríssima linha. Os
+                        bioestimuladores devolveram a firmeza do meu rosto. Já indiquei para todas as minhas amigas."
+                    </p>
+                    <div class="avaliacao-autor">
+                        <div class="autor-iniciais">LC</div>
+                        <div class="autor-info">
+                            <span class="autor-nome">Laura Castro</span>
+                            <span class="autor-proc">Bioestimuladores</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-avaliacao">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-estrelas">★★★★★</div>
+                    </div>
+                    <p class="avaliacao-texto">"Profissionalismo que impressiona. O botox ficou perfeito, sem aquele
+                        aspecto congelado. Ela realmente entende a anatomia do rosto como poucas."</p>
+                    <div class="avaliacao-autor">
+                        <div class="autor-iniciais variante-escura">FS</div>
+                        <div class="autor-info">
+                            <span class="autor-nome">Fernanda S.</span>
+                            <span class="autor-proc">Toxina Botulínica</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-avaliacao">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-estrelas">★★★★★</div>
+                        <span class="selo-verificado">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="color: #4285F4;">
+                                <path
+                                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                <path
+                                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                <path
+                                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                <path
+                                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="avaliacao-texto">"Melhor investimento que fiz em mim mesma esse ano. A Dra. Dainara
+                        conseguiu harmonizar meu perfil de uma forma super sutil. Autoestima renovada!"</p>
+                    <div class="avaliacao-autor">
+                        <img src="img/avatar-2.webp" alt="Avatar Cliente" class="autor-avatar" loading="lazy" width="45"
+                            height="45">
+                        <div class="autor-info">
+                            <span class="autor-nome">Patrícia Gomes</span>
+                            <span class="autor-proc">Harmonização Full Face</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-avaliacao">
+                    <div class="avaliacao-header">
+                        <div class="avaliacao-estrelas">★★★★★</div>
+                    </div>
+                    <p class="avaliacao-texto">"Simplesmente encantada com o ritual de atendimento. Da recepção até o
+                        pós-procedimento, o cuidado é impecável. O preenchimento nas olheiras tirou meu ar de cansaço."
+                    </p>
+                    <div class="avaliacao-autor">
+                        <div class="autor-iniciais">JA</div>
+                        <div class="autor-info">
+                            <span class="autor-nome">Juliana A.</span>
+                            <span class="autor-proc">Tratamento de Olheiras</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="secao-galeria-vertical" id="resultados">
+        <div class="container-galeria">
+
+            <div class="cabecalho-editorial">
+                <span class="tag-portfolio reveal-fade-up">Portfólio Clínico</span>
+
+                <h2 class="titulo-editorial" id="titulo-animado">
+                    <span class="palavra">A</span>
+                    <span class="palavra destaque-italico">Arte</span>
+                    <span class="palavra">dos</span>
+                    <span class="palavra">Resultados</span>
+                </h2>
+
+                <p class="subtitulo-editorial reveal-fade-up delay-2">
+                    Transformações reais guiadas pela naturalidade e precisão.
+                </p>
+            </div>
+
+            <div class="galeria-wrapper">
+                <div class="grid-galeria-9-16 slider-mobile">
+
+                    <article class="card-resultado reveal-fade-up delay-1">
+                        <div class="resultado-imagem-box">
+                            <div class="etiquetas-contexto">
+                                <span class="tag-vidro">Antes</span>
+                                <span class="tag-vidro">Depois</span>
+                            </div>
+
+                            <picture class="resultado-bg">
+                                <source srcset="img/resultado-1.avif" type="image/avif">
+                                <img src="img/resultado-1.webp" alt="Resultado de Harmonização Facial" loading="lazy"
+                                    width="540" height="960" class="img-zoomable">
+                            </picture>
+
+                            <div class="resultado-overlay">
+                                <span class="icone-zoom">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <path d="M21 21l-4.35-4.35M11 8v6M8 11h6" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="resultado-legenda">
+                            <h3 class="resultado-titulo">Harmonização Full Face</h3>
+                            <p class="resultado-desc">Reestruturação de contornos e iluminação.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-resultado reveal-fade-up delay-2">
+                        <div class="resultado-imagem-box">
+                            <div class="etiquetas-contexto">
+                                <span class="tag-vidro">Antes</span>
+                                <span class="tag-vidro">Depois</span>
+                            </div>
+
+                            <picture class="resultado-bg">
+                                <source srcset="img/resultado-2.avif" type="image/avif">
+                                <img src="img/resultado-2.webp" alt="Resultado de Preenchimento Labial" loading="lazy"
+                                    width="540" height="960" class="img-zoomable">
+                            </picture>
+
+                            <div class="resultado-overlay">
+                                <span class="icone-zoom">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <path d="M21 21l-4.35-4.35M11 8v6M8 11h6" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="resultado-legenda">
+                            <h3 class="resultado-titulo">Preenchimento Labial</h3>
+                            <p class="resultado-desc">Volume sob medida e definição sutil.</p>
+                        </div>
+                    </article>
+
+                    <article class="card-resultado reveal-fade-up delay-3">
+                        <div class="resultado-imagem-box">
+                            <div class="etiquetas-contexto">
+                                <span class="tag-vidro">Antes</span>
+                                <span class="tag-vidro">Depois</span>
+                            </div>
+
+                            <picture class="resultado-bg">
+                                <source srcset="img/resultado-3.avif" type="image/avif">
+                                <img src="img/resultado-3.webp" alt="Resultado de Bioestimuladores" loading="lazy"
+                                    width="540" height="960" class="img-zoomable">
+                            </picture>
+
+                            <div class="resultado-overlay">
+                                <span class="icone-zoom">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="11" cy="11" r="8" />
+                                        <path d="M21 21l-4.35-4.35M11 8v6M8 11h6" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="resultado-legenda">
+                            <h3 class="resultado-titulo">Tratamento de Olheiras</h3>
+                            <p class="resultado-desc">Revitalização profunda do olhar.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+
+            <div class="cta-editorial-wrapper reveal-fade-up delay-4">
+                <div class="status-agendamento">
+                    <span class="dot-pulsante"></span> Agendamentos Abertos
+                </div>
+
+                <a href="https://wa.me/5500000000000?text=Olá,%20vi%20os%20resultados%20no%20site%20e%20desejo%20agendar%20minha%20transformação!"
+                    class="btn-shimmer-premium" target="_blank" rel="noopener">
+                    Desejo essa transformação <span class="icone-seta">🡢</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="lightbox-modal" id="lightbox">
+        <span class="lightbox-fechar">&times;</span>
+        <img class="lightbox-conteudo" id="lightbox-img" alt="Zoom do Resultado">
+    </div>
+
+    <section class="secao-faq" id="duvidas">
+        <div class="container-faq">
+
+            <div class="faq-grid">
+                <div class="faq-chamada reveal-fade-right">
+                    <span class="tag-faq">Transparência</span>
+                    <h2 class="titulo-faq">Ainda tem <br>alguma dúvida?</h2>
+                    <p class="desc-faq">
+                        Separamos as perguntas mais comuns das nossas pacientes para que você inicie sua jornada com
+                        total tranquilidade e segurança.
+                    </p>
+                    <a href="https://wa.me/5500000000000?text=Olá,%20tenho%20uma%20dúvida%20específica%20sobre%20os%20procedimentos."
+                        class="link-faq-whats" target="_blank" rel="noopener">
+                        Fazer uma pergunta direta <span class="icone-seta">🡢</span>
+                    </a>
+                </div>
+
+                <div class="faq-lista reveal-fade-up delay-1">
+
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            <span class="texto-pergunta">Os procedimentos são dolorosos?</span>
+                            <span class="icone-mais"></span>
+                        </button>
+                        <div class="faq-resposta">
+                            <div class="faq-conteudo-interno">
+                                <p>O conforto da paciente é uma das nossas maiores prioridades. Utilizamos pomadas
+                                    anestésicas de altíssima potência, bloqueios locais quando necessário e técnicas
+                                    minimamente invasivas que tornam os procedimentos extremamente toleráveis e, na
+                                    maioria das vezes, indolores.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            <span class="texto-pergunta">Vou perder as expressões do meu rosto?</span>
+                            <span class="icone-mais"></span>
+                        </button>
+                        <div class="faq-resposta">
+                            <div class="faq-conteudo-interno">
+                                <p>De forma alguma. A nossa filosofia é a "Beleza Invisível". Aplicamos as dosagens
+                                    exatas de toxina botulínica e preenchedores apenas para suavizar o cansaço e
+                                    prevenir o envelhecimento, mantendo a sua naturalidade e a sua mímica facial
+                                    intactas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            <span class="texto-pergunta">Posso voltar a trabalhar no mesmo dia?</span>
+                            <span class="icone-mais"></span>
+                        </button>
+                        <div class="faq-resposta">
+                            <div class="faq-conteudo-interno">
+                                <p>Sim! A maioria dos nossos protocolos não exige tempo de recuperação (downtime). Você
+                                    pode realizar o procedimento no horário de almoço e retornar às suas atividades
+                                    normais logo em seguida, com pequenas recomendações que passaremos na hora.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-pergunta" aria-expanded="false">
+                            <span class="texto-pergunta">Quanto tempo duram os resultados?</span>
+                            <span class="icone-mais"></span>
+                        </button>
+                        <div class="faq-resposta">
+                            <div class="faq-conteudo-interno">
+                                <p>A durabilidade varia conforme o organismo e o procedimento. A toxina botulínica dura
+                                    em média 3 a 5 meses. Já os preenchedores e bioestimuladores de colágeno premium que
+                                    utilizamos podem durar de 12 a 24 meses. Na sua avaliação, montaremos um plano de
+                                    manutenção ideal.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-premium" id="contato">
+        <div class="container-footer">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo-footer">
+                        <img src="assets/svg/logo.png" alt="Dra. Dainara Freire" loading="lazy" width="160" height="45">
+                    </a>
+                    <p class="footer-bio">Realçando a sua essência com naturalidade, precisão e alta tecnologia.</p>
+
+                    <div class="footer-sociais">
+                        <a href="https://instagram.com/dradainarafreire" target="_blank" rel="noopener"
+                            aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648A9.85 9.85 0 0 1 12 2C17.523 2 22 6.477 22 12s-4.477 10-10 10z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-titulo">Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#procedimentos">Procedimentos</a></li>
+                        <li><a href="#especialista">A Especialista</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#duvidas">Dúvidas Frequentes (FAQ)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-titulo">Contato</h4>
+                    <ul class="contato-lista">
+                        <li>
+                            <span class="icone-contato">📍</span>
+                            <p>Av. Higienópolis, 1234 - Sala 50 - Londrina, PR</p>
+                        </li>
+                        <li>
+                            <span class="icone-contato">✉️</span>
+                            <a href="mailto:contato@dradainara.com.br">contato@dradainara.com.br</a>
+                        </li>
+                        <li>
+                            <span class="icone-contato">📱</span>
+                            <a href="https://wa.me/5500000000000" target="_blank">(00) 00000-0000</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-mapa">
+                    <h4 class="footer-titulo">Como Chegar</h4>
+                    <a href="https://maps.app.goo.gl/SEU_LINK_AQUI" target="_blank" rel="noopener"
+                        class="mapa-link-otimizado" aria-label="Abrir rota no Google Maps">
+                        <picture>
+                            <source srcset="img/mapa-clinica.avif" type="image/avif">
+                            <img src="img/mapa-clinica.webp" alt="Localização no Mapa" loading="lazy" width="300"
+                                height="150">
+                        </picture>
+                        <div class="mapa-overlay">
+                            <span class="btn-rota">Traçar Rota <span class="icone-seta">🡢</span></span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-linha"></div>
+
+            <div class="footer-base">
+                <div class="copy-direitos">
+                    <p>&copy; <span id="ano-atual"></span> Dra. Dainara Freire. Todos os direitos reservados. <span
+                            class="crm-text">CRM/CRO 00000-UF</span></p>
+                </div>
+
+                <div class="links-legais">
+                    <a href="termos.html">Termos de Uso</a>
+                    <span class="separador">•</span>
+                    <a href="privacidade.html">Privacidade</a>
+                </div>
+
+                <div class="assinatura-agencia">
+                    <p>Desenvolvido por
+                        <a href="https://frontlabstudio.com.br/" target="_blank" rel="noopener"
+                            class="frontlab-signature">
+                            Frontlab Studio<span class="status-dot"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5500000000000?text=Olá,%20estou%20no%20site%20e%20gostaria%20de%20agendar%20uma%20avaliação!"
+        class="whatsapp-flutuante" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+        <div class="whats-avatar-wrapper">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648A9.85 9.85 0 0 1 12 2C17.523 2 22 6.477 22 12s-4.477 10-10 10z" />
+            </svg>
+            <span class="whats-pulse"></span>
+        </div>
+    </a>
+
+
+
+
+    <script src="assets/script/script.js"></script>
+</body>
+
+</html>
