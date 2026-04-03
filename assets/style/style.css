@@ -154,6 +154,28 @@ button {
     display: none;
 }
 
+/* Ajuste universal para o ícone de seta em todos os botões */
+.icone-seta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+/* Garante que o SVG herde a cor do texto do botão */
+.icone-seta svg {
+    display: block;
+    width: 1.1em;
+    /* Tamanho relativo ao texto */
+    height: 1.1em;
+}
+
+/* Efeito de hover que já tínhamos, agora no container do SVG */
+.btn-shimmer-premium:hover .icone-seta,
+.btn-submit-vip:hover .icone-seta {
+    transform: translateX(5px);
+}
+
 /* =========================================
    MEDIA QUERIES MODERNAS
 ========================================= */
