@@ -1162,11 +1162,23 @@ button {
     }
 
     .manifesto-selo {
-        bottom: 20px;
+        /* A MÁGICA 1: Trocamos o '20px' por '18%'. 
+           Como o card de baixo sobe -15%, o selo agora sempre fugirá dele, ficando logo acima. */
+        bottom: 18%;
         left: 0;
         border-radius: 0 4px 4px 0;
-        /* Cola na lateral esquerda */
         padding: 1rem 1.5rem;
+    }
+
+    .manifesto-titulo {
+        /* A MÁGICA 2: Reduzimos levemente a fonte base para o celular não sofrer */
+        font-size: clamp(1.8rem, 6vw, 2.4rem);
+        max-width: 100%;
+        /* Removemos o travamento de 320px que causava o vazamento */
+        word-wrap: break-word;
+        /* Garante que palavras gigantes quebrem de linha se necessário */
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .manifesto-conteudo-overlap {
@@ -1223,7 +1235,7 @@ button {
     }
 
     .manifesto-titulo {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .manifesto-texto {
