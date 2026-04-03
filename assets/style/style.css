@@ -2970,12 +2970,25 @@ button {
 .footer-links a {
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
-    transition: color 0.3s ease, padding-left 0.3s ease;
+    display: inline-block;
+    position: relative; /* Necessário para ancorar o campo de força */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* O SEGREDO: Uma caixa invisível que estica a área de contato do mouse para os lados.
+   Mesmo que o texto mova 5px pra direita, o mouse não vai "cair" do elemento. */
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    bottom: -5px;
+    left: -15px; /* Expande 15px para a esquerda */
+    right: -15px; /* Expande 15px para a direita */
 }
 
 .footer-links a:hover {
     color: var(--cor-primaria);
-    padding-left: 5px;
+    transform: translateX(5px);
 }
 
 .contato-lista li {
@@ -2993,7 +3006,7 @@ button {
 }
 
 /* --- Mapa Interativo Premium --- */
-mapa-interativo-wrapper {
+.mapa-interativo-wrapper {
     position: relative;
     width: 100%;
     /* A MÁGICA: Passamos de 2/1 para 1/1. Isso dobra a altura do mapa! */
