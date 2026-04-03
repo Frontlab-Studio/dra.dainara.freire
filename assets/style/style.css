@@ -72,6 +72,7 @@ button {
     /* Começa transparente */
     transition: background-color 0.4s ease, border-bottom 0.4s ease, box-shadow 0.4s ease;
     border-bottom: 1px solid transparent;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
 /* Classe injetada via JS ao rolar a página */
@@ -81,6 +82,7 @@ button {
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(212, 165, 165, 0.2);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    filter: none;
 }
 
 .container-header {
@@ -112,6 +114,14 @@ button {
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    color: var(--cor-branca);
+}
+
+.header-principal.scrolled .nav-link {
+    text-shadow: none;
+    color: var(--cor-texto);
+    /* Volta pra cor normal do texto */
 }
 
 /* Efeito de underline animado e elegante */
@@ -203,9 +213,12 @@ button {
     .hamburguer {
         width: 24px;
         height: 2px;
-        background-color: var(--cor-texto);
+        /* Se o hamburguer for escuro e o vídeo tbm, mude para var(--cor-branca) */
+        background-color: var(--cor-branca);
         position: relative;
         transition: 0.3s ease;
+        /* Sombra no traço do meio */
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
     }
 
     .hamburguer::before,
@@ -214,9 +227,19 @@ button {
         position: absolute;
         width: 100%;
         height: 2px;
-        background-color: var(--cor-texto);
+        background-color: var(--cor-branca);
         left: 0;
         transition: 0.3s ease;
+        /* Sombra nos traços de cima e de baixo */
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Remove a sombra e volta a cor quando rolar a página (pois o header ganha fundo branco) */
+    .header-principal.scrolled .hamburguer,
+    .header-principal.scrolled .hamburguer::before,
+    .header-principal.scrolled .hamburguer::after {
+        background-color: var(--cor-texto);
+        box-shadow: none;
     }
 
     .hamburguer::before {

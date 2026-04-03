@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 // =========================================
 // INTERAÇÕES PREMIUM: SEÇÃO MANIFESTO
 // =========================================
