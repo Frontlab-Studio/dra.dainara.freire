@@ -1586,6 +1586,26 @@ button {
 
 /* 2. Mobile Padrão (<= 768px) */
 @media (width <=768px) {
+    .secao-triagem {
+        padding: 5rem 0;
+    }
+
+    /* A MÁGICA 1: Reduz a margem de fora do formulário no celular */
+    .container-triagem {
+        padding: 0 1rem;
+    }
+
+    /* A MÁGICA 2: Reduz o espaço interno da caixa para dar mais respiro aos inputs */
+    .triagem-wrapper {
+        padding: 2rem 1.2rem;
+    }
+
+    .cabecalho-triagem {
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+        /* Centraliza melhor o texto sem encostar nas bordas */
+    }
+
     .form-grupo-inputs {
         grid-template-columns: 1fr;
         gap: 2.5rem;
@@ -1595,24 +1615,31 @@ button {
         grid-template-columns: 1fr;
         /* Cards empilhados no mobile */
     }
-
-    .triagem-wrapper {
-        padding: 2.5rem 1.5rem;
-    }
 }
 
 /* 3. Mobile Pequeno (<= 360px) */
 @media (width <=360px) {
+
+    /* Ganha o máximo de espaço possível nas laterais da telinha */
+    .container-triagem {
+        padding: 0 0.8rem;
+    }
+
+    .triagem-wrapper {
+        padding: 1.5rem 1rem;
+    }
+
     .titulo-triagem {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        /* Título um pouco menor para não quebrar feio */
     }
 
     .label-pergunta {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .tile-visual {
-        padding: 1rem;
+        padding: 0.8rem 1rem;
     }
 
     .texto-aceite {
