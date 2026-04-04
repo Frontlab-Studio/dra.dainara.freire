@@ -141,7 +141,7 @@ button {
 
 .btn-cta-header {
     background-color: var(--cor-primaria);
-    color: var(--cor-branca);
+    color: var(--cor-texto);
     padding: 0.75rem 1.8rem;
     border-radius: 4px;
     font-weight: 600;
@@ -539,7 +539,7 @@ button {
     align-items: center;
     gap: 15px;
     background-color: var(--cor-primaria);
-    color: var(--cor-branca);
+    color: var(--cor-texto);
     padding: 1.2rem 2.5rem;
     border-radius: 4px;
     font-weight: 600;
@@ -3082,7 +3082,7 @@ button {
 
 .btn-rota {
     background-color: var(--cor-primaria);
-    color: var(--cor-branca);
+    color: var(--cor-texto);
     padding: 8px 16px;
     border-radius: 4px;
     font-size: 0.85rem;
@@ -3505,7 +3505,7 @@ button {
 
 .btn-cookie-primario {
     background-color: var(--cor-primaria);
-    color: white;
+    color: var(--cor-texto);
 }
 
 .btn-cookie-secundario {

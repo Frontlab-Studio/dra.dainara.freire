@@ -17,7 +17,8 @@
     <meta name="robots" content="index, follow">
     <link rel="preload" as="image" href="assets/img/autocuidado-ritual.webp" fetchpriority="high">
     <link rel="icon" href="assets/svg/favicon.png" type="image/png">
-    
+    <link rel="apple-touch-icon" href="assets/svg/favicon.png">
+
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -372,11 +373,11 @@
 
                     <div class="form-grupo-inputs">
                         <div class="input-box">
-                            <input type="text" id="nome-paciente" required placeholder=" ">
+                            <input type="text" id="nome-paciente" required placeholder=" " autocomplete="name">
                             <label for="nome-paciente">Nome Completo</label>
                         </div>
                         <div class="input-box">
-                            <input type="tel" id="whats-paciente" required placeholder=" " pattern="[0-9\s\-\(\)]+">
+                            <input type="tel" id="whats-paciente" required placeholder=" " pattern="[0-9\s\-\(\)]+" autocomplete="name">
                             <label for="whats-paciente">WhatsApp (com DDD)</label>
                         </div>
                     </div>
@@ -924,10 +925,11 @@
                     <h4 class="footer-titulo">Como Chegar</h4>
 
                     <div class="mapa-interativo-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6481.757391159227!2d-51.44914185122723!3d-23.408076422581644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eca33928131ef3%3A0x7fb016e7b063ff98!2sDra.%20Dainara%20Freire%20-%20Est%C3%A9tica%20Avan%C3%A7ada!5e0!3m2!1spt-BR!2sbr!4v1775243951087!5m2!1spt-BR!2sbr"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe title="Mapa de localização da clínica Dra. Dainara Freire"
+                            src="https://maps.google.com/maps?q=R.+Papagaio+Roxo,+75+-+Arapongas&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                         <div class="overlay-scroll-mobile"></div>
                     </div>
                 </div>
